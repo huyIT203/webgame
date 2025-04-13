@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
         'number' => $number
     ];
     
-    // Kiểm tra có thay đổi mật khẩu không
     if (!empty($_POST['new_password']) && !empty($_POST['current_password'])) {
         $current_password = $_POST['current_password'];
         $new_password = $_POST['new_password'];
